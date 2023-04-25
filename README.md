@@ -48,4 +48,3 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 ![](plots/nik3.png)
 ![](plots/nik4.png)
 ![](plots/nik5.png)
->>>>>>> ab409c0433a9c2389be9cf1fd9ec9bbe4fbfa872
