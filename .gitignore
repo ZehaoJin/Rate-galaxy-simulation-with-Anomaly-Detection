@@ -1,0 +1,11 @@
+data/
+feature_archive/
+MaNGA_dr17_structural_params_with_chem.csv
+NIHAO_AGN_params_with_SFR.csv
+SDSS_stats.ecsv
+n80_stats_mod.ecsv
+nihao_stats_0206.csv
+nihao_stats_0206.ecsv
+t_SDSS.csv
+t_SDSS.ecsv
+Feature_to_mass.ipynb
