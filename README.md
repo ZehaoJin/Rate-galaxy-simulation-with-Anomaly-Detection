@@ -61,6 +61,7 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 ### [Installation](#1-installation)
 ### [Use the SDSS-trained model described in the paper](#2-use-the-sdss-trained-model-described-in-the-paper)
 ### [Train your own new model with a new dataset](#3-train-your-own-new-model-with-a-new-dataset)
+### [Cite this work](#4-cite-this-work)
  
 
 ## 1. Installation
@@ -152,4 +153,22 @@ or
 
 - You will find your trained weights, losslog, options log, etc. in `output/`
 
+- To test your trained model, again use [test.ipynb](test.ipynb) or [test.py](test.py). Remember to change the path of weights to your newly trained one, and change options parameters to match the ones you used during training.
+
 - It is almost equivalent to use this repository or [the original GANomaly repository by Samet Akcay et al.](https://github.com/samet-akcay/ganomaly) to train.
+
+
+## 4. Cite this work
+If you use this repository or would like to refer the paper, please use the following BibTeX entry:
+
+
+It is always nice to cite the original GANomaly paper too:
+
+    @inproceedings{akcay2018ganomaly,
+      title={Ganomaly: Semi-supervised anomaly detection via adversarial training},
+      author={Akcay, Samet and Atapour-Abarghouei, Amir and Breckon, Toby P},
+      booktitle={Asian Conference on Computer Vision},
+      pages={622--637},
+      year={2018},
+      organization={Springer}
+    }
