@@ -2,8 +2,8 @@
 Put images you want to test in data/test/1.abnormal/, or data/test/0.normal/
 images should be 3*64*64  if you are using the SDSS-trained model descripted in the paper
 
-result anomaly score is saved at output/output/test/anomaly_scores.csv
-result images is saved at output/output/test/images/   (only if you uncomment line 128 & 132)
+result anomaly score is saved at output/ganomaly/test/test/anomaly_scores.csv
+result images is saved at output/ganomaly/test/test/images/   (only if you uncomment line 128 & 132)
 
 
 Test the SDSS-trained model described in the paper:
@@ -128,12 +128,12 @@ def test():
             #show(grid,ascore_array[i],name)
 
             ### uncomment if you want to further save the images.
-            ### the output image is saved at ./output/output/test/image/ folder
-            #plt.savefig(opt.outf+'/output/test/images/'+str(i)+'.png')
+            ### the output image is saved at output/ganomaly/test/test/anomaly_scores.csv
+            #plt.savefig(opt.outf+'/ganomaly/test/test/images/'+str(i)+'.png')
 
         df=pd.DataFrame(model.dataloader['test'].dataset.samples,columns=['filename','ascore'])
         df['ascore']=ascore_array
-        df.to_csv(opt.outf+'/output/test/anomaly_scores.csv',index='False')
+        df.to_csv(opt.outf+'/ganomaly/test/test/anomaly_scores.csv',index='False')
 
 
 if __name__ == '__main__':
