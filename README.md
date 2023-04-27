@@ -4,9 +4,9 @@
 
 ## [Presentation Slides](GANomaly_20230321_Zehao.pptx)
 
-## [Glance of this project](#glance-of-this-project)
+## [Glance of this project](#glance-of-this-project-1)
 
-## [Use this project](#use-this-project)
+## [Use this project](#use-this-project-1)
 
 # Glance of this project
 Code to produce all the plots in the paper/in below is located at [paper_plot.ipynb](paper_plot.ipynb)
