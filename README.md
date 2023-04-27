@@ -57,3 +57,6 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 ![](plots/nik5.png)
 
 # Use this project
+first, clone this repository to your machine
+
+  git clone git@github.com:ZehaoJin/Rate-galaxy-simulation-with-Anomaly-Detection.git
