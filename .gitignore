@@ -1,4 +1,10 @@
-data/
+data/faceon/
+data/fun/
+data/n80_1129/
+data/orientation/
+data/SDSS/
+data/SDSS_test/
+data/UHD/
 feature_archive/
 MaNGA_dr17_structural_params_with_chem.csv
 NIHAO_AGN_params_with_SFR.csv
