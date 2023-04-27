@@ -58,11 +58,11 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 
 # Use this project
 
-Installation[#1-installation]
+### [Installation](#1-installation)
  
 
 ## 1. Installation
-First, clone this repository to your machine
+1.1. clone this repository to your machine (make sure your machine has a GPU)
 
     git clone git@github.com:ZehaoJin/Rate-galaxy-simulation-with-Anomaly-Detection.git
     
@@ -70,4 +70,21 @@ or
 
     git clone https://github.com/ZehaoJin/Rate-galaxy-simulation-with-Anomaly-Detection.git
 
-make sure your machine has a GPU
+1.2. Install dependencies. 
+
+If you already have many Machine Learning/Astro packages installed, maybe (although not recommanded) you can skip this step, and install needed packages when import error appears (conda install <package name>). Some code might need a bit more dependencies than others. Typical packages you will need are pytorch, scikit-learn, astropy, visdom, tqdm, pandas, numpy, matplotlib, etc
+
+(Recommanded way) Create a virtual environment via conda:
+
+    conda create --name ganomaly
+    
+Activate the virtual environment:
+
+    conda activate ganomaly
+
+Install the dependencies:
+
+    conda install -c intel mkl_fft
+    pip install --user --requirement requirements.txt
+
+
