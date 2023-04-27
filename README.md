@@ -4,7 +4,9 @@
 
 ## [Presentation Slides](GANomaly_20230321_Zehao.pptx)
 
-## [Glance of this project](#Glance-of-this-project)
+## [Glance of this project](#glance-of-this-project)
+
+## [Use this project](#use-this-project)
 
 # Glance of this project
 Code to produce all the plots in the paper/in below is located at [paper_plot.ipynb](paper_plot.ipynb)
@@ -53,3 +55,5 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 ![](plots/nik3.png)
 ![](plots/nik4.png)
 ![](plots/nik5.png)
+
+# Use this project
