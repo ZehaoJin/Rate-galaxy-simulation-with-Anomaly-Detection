@@ -1,5 +1,5 @@
 """
-Put images you want to test in data/test/1.abnormal/, or data/test/0.normal/
+Put images you want to test in data/test/1.abnormal/
 images should be 3*64*64  if you are using the SDSS-trained model descripted in the paper
 
 result anomaly score is saved at output/ganomaly/test/test/anomaly_scores.csv
