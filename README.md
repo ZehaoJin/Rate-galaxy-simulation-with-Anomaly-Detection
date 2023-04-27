@@ -4,7 +4,7 @@
 
 ## [Presentation Slides](GANomaly_20230321_Zehao.pptx)
 
-[Glance of this project](#Glance-of-this-project)
+## [Glance of this project](#Glance-of-this-project)
 
 # Glance of this project
 
