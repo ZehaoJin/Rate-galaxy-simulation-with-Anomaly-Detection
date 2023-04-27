@@ -59,8 +59,8 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 # Use this project
 
 ### [Installation](#1-installation)
-### [Use the SDSS-trained model described in the paper](2-use-the-sdss-trained-model-described-in-the-paper)
-### [Train your own new model with a new dataset](3-train-your-own-new-model-with-a-new-dataset)
+### [Use the SDSS-trained model described in the paper](#2-use-the-sdss-trained-model-described-in-the-paper)
+### [Train your own new model with a new dataset](#3-train-your-own-new-model-with-a-new-dataset)
  
 
 ## 1. Installation
