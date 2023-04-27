@@ -4,6 +4,8 @@
 
 ## [Presentation Slides](GANomaly_20230321_Zehao.pptx)
 
+## [Go to Real Cool Heading section](#1. Overview)
+
 ## 1. Overview
 Train a neural network to reconstruct (original image -> feature space represetation of image -> reconstruct image back) SDSS galaxy images, with only SDSS images as training set. After trained, let the neural network reconstruct galaxy simulation images. The places where the reconstruction fails is the anomaly. The distance in latent space between original images and reconstructed image serves as Anomaly score $\mathcal{A}$. Lower $\mathcal{A}$ means the simulation is closer to SDSS observations.
 
