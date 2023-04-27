@@ -61,7 +61,8 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 ### [Installation](#1-installation)
 ### [Use the SDSS-trained model described in the paper](#2-use-the-sdss-trained-model-described-in-the-paper)
 ### [Train your own new model with a new dataset](#3-train-your-own-new-model-with-a-new-dataset)
-### [Cite this work](#4-cite-this-work)
+### [Feature/latent space exploration](#4-feature-latent-space-exploration)
+### [Cite this work](#5-cite-this-work)
  
 
 ## 1. Installation
@@ -158,7 +159,12 @@ or
 - It is almost equivalent to use this repository or [the original GANomaly repository by Samet Akcay et al.](https://github.com/samet-akcay/ganomaly) to train.
 
 
-## 4. Cite this work
+## 4. Feature/latent space exploration
+
+[explore_features.ipynb](explore_features.ipynb)
+
+
+## 5. Cite this work
 If you use this repository or would like to refer the paper, please use the following BibTeX entry:
 
 
