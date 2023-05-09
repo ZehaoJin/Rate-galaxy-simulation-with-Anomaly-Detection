@@ -50,11 +50,8 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 ![](plots/ageA.png)
 ![](plots/BVA.png)
 ### 4.6. $\mathcal{A}$ vs scaling relations
-![](plots/nik1.png)
-![](plots/nik2.png)
-![](plots/nik3.png)
-![](plots/nik4.png)
-![](plots/nik5.png)
+![](plots/nikall.png)
+
 
 # Use this project
 
@@ -63,25 +60,25 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 ### [Train your own new model with a new dataset](#3-train-your-own-new-model-with-a-new-dataset)
 ### [Feature/latent space exploration](#4-featurelatent-space-exploration)
 ### [Cite this work](#5-cite-this-work)
- 
+
 
 ## 1. Installation
 ### 1.1. clone this repository to your machine (make sure your machine has a GPU)
 
     git clone git@github.com:ZehaoJin/Rate-galaxy-simulation-with-Anomaly-Detection.git
-    
+
 or
 
     git clone https://github.com/ZehaoJin/Rate-galaxy-simulation-with-Anomaly-Detection.git
 
-### 1.2. Install dependencies 
+### 1.2. Install dependencies
 
 - If you already have many Machine Learning/Astro packages installed, maybe (although not recommanded) you can skip this step, and install needed packages when import error appears (`conda install <package-name>`). Some code might need a bit more dependencies than others. Typical packages you will need are pytorch, scikit-learn, astropy, visdom, tqdm, pandas, numpy, matplotlib, etc
 
 - (Recommanded) Create a virtual environment via conda:
 
       conda create --name ganomaly
-    
+
 - Activate the virtual environment:
 
       conda activate ganomaly
@@ -90,7 +87,7 @@ or
 
       conda install -c intel mkl_fft
       pip install --user --requirement requirements.txt
-      
+
 
 ## 2. Use the SDSS-trained model described in the paper
 
@@ -125,7 +122,7 @@ or
        │   │   └── normal_img_1.png
        │   │   ...
        │   │   └── normal_img_t.png
-       
+
 - In a seperate terminal, run `visdom`, which allows you to visualize the whole training progress.
 
       python3 -m visdom.server
@@ -134,11 +131,11 @@ or
 
       screen -S <your-session-name>
       python3 -m visdom.server
-      
-  And `Ctrl+A`,then press `D` to detach that screen session, and leave visdom run in the background. 
-  
+
+  And `Ctrl+A`,then press `D` to detach that screen session, and leave visdom run in the background.
+
   You can re-attach to that session by `screen -r <your-session-name>`, check all sessions by `screen -ls`, kill the current attached sesssion by `Ctrl+A`, then press `K`
-  
+
 - Start training:
 
       python train.py                        \
