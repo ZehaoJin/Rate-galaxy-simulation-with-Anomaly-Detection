@@ -144,8 +144,8 @@ or
       python train.py                        \
          --dataset <your-dataset-name>       \
          --isize <image-size>                \
-         --nc <input image channels>         \
-         --nz <size of the latent z vector>  \
+         --nc <input-image-channels>         \
+         --nz <size-of-the-latent-z-vector>  \
          --niter <number-of-epochs>          \
 
   For more training options, run `python train.py -h`
