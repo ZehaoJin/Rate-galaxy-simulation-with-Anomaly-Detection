@@ -161,6 +161,7 @@ or
 
 - Install some packages: `pynbody`,`astropy`,`extinction`
 - Follow [mock_observation.py](mock_observation.py), replace the path to load your own simulation.
+- Or, follow [mock_observation.ipynb](mock_observation.ipynb) for a interactive example.
 
 ## 5. Feature/latent space exploration
 
