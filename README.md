@@ -58,8 +58,9 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 ### [Installation](#1-installation)
 ### [Use the SDSS-trained model described in the paper](#2-use-the-sdss-trained-model-described-in-the-paper)
 ### [Train your own new model with a new dataset](#3-train-your-own-new-model-with-a-new-dataset)
-### [Feature/latent space exploration](#4-featurelatent-space-exploration)
-### [Cite this work](#5-cite-this-work)
+### [Mock observation from simulations](#4-mock-observation-from-simulations)
+### [Feature/latent space exploration](#5-featurelatent-space-exploration)
+### [Cite this work](#6-cite-this-work)
 
 
 ## 1. Installation
@@ -156,12 +157,17 @@ or
 - It is almost equivalent to use this repository or [the original GANomaly repository by Samet Akcay et al.](https://github.com/samet-akcay/ganomaly) to train.
 
 
-## 4. Feature/latent space exploration
+## 4. Mock observation from simulations
+
+- Install some packages: `pynbody`,`astropy`,`extinction`
+- Follow [mock_observation.py](mock_observation.py), replace the path to load your own simulation.
+
+## 5. Feature/latent space exploration
 
 [explore_features.ipynb](explore_features.ipynb)
 
 
-## 5. Cite this work
+## 6. Cite this work
 If you use this repository or would like to refer the paper, please use the following BibTeX entry:
 
 
