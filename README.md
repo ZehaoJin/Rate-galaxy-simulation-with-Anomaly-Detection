@@ -58,9 +58,10 @@ Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as nor
 ### [Installation](#1-installation)
 ### [Use the SDSS-trained model described in the paper](#2-use-the-sdss-trained-model-described-in-the-paper)
 ### [Train your own new model with a new dataset](#3-train-your-own-new-model-with-a-new-dataset)
-### [Mock observation from simulations](#4-mock-observation-from-simulations)
-### [Feature/latent space exploration](#5-featurelatent-space-exploration)
-### [Cite this work](#6-cite-this-work)
+### [Generate Mock observation from simulations](#4-mock-observation-from-simulations)
+### [Download SDSS galaxy image dataset](#5-download-sdss-galaxy-image-dataset)
+### [Feature/latent space exploration](#6-featurelatent-space-exploration)
+### [Cite this work](#7-cite-this-work)
 
 
 ## 1. Installation
@@ -164,12 +165,20 @@ or
 - Or, follow [mock_observation.ipynb](mock_observation.ipynb) for a interactive example.
 - You shall modify the [source library](homemade_render.py) if needed.
 
-## 5. Feature/latent space exploration
+
+## 5. Download SDSS galaxy image dataset
+
+- To download 670,722 SDSS galaxy image dataset used in this paper. The images are from SDSS image cutout tool, galaxy coordinates are from galaxy catalog by [Meert et al. (2014)](https://academic.oup.com/mnras/article/446/4/3943/2892484)
+- Run this script to download the cutouts
+
+
+
+## 6. Feature/latent space exploration
 
 [explore_features.ipynb](explore_features.ipynb)
 
 
-## 6. Cite this work
+## 7. Cite this work
 If you use this repository or would like to refer the paper, please use the following BibTeX entry:
 
 
