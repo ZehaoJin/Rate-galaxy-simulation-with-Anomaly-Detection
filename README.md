@@ -169,8 +169,9 @@ or
 ## 5. Download SDSS galaxy image dataset
 
 - To download 670,722 SDSS galaxy image dataset used in this paper. The images are from SDSS image cutout tool, galaxy coordinates are from galaxy catalog by [Meert et al. (2014)](https://academic.oup.com/mnras/article/446/4/3943/2892484)
-- Run this script to download the cutouts
-
+- Run this [python script](SDSS_cutouts/download_cutouts.py) `python SDSS_cutouts/download_cutouts.py` to download the cutout images to `cutout` folder.
+- Tips: It takes long to download all the images... maybe you want to download it in the background via things like `screen`
+- Run this [python script](SDSS_cutouts/split_train_test.py) `python SDSS_cutouts/split_train_test.py` will create a training/test dataset for you.
 
 
 ## 6. Feature/latent space exploration
