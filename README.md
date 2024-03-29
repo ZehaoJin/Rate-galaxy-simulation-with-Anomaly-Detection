@@ -1,64 +1,9 @@
 # Rate-galaxy-simulation-with-Anomaly-Detection
 
-## [Paper in prep](https://www.overleaf.com/read/ddzwssghsqhy)
-
-## [Presentation Slides](GANomaly_20230321_Zehao.pptx)
-
-## [Glance of this project](#glance-of-this-project-1)
-
-## [Use this project](#use-this-project-1)
-
-# Glance of this project
-Code to produce all the plots in the paper/in below is located at [paper_plot.ipynb](paper_plot.ipynb)
-
-## 1. Overview
-Train a neural network to reconstruct (original image -> feature space represetation of image -> reconstruct image back) SDSS galaxy images, with only SDSS images as training set. After trained, let the neural network reconstruct galaxy simulation images. The places where the reconstruction fails is the anomaly. The distance in latent space between original images and reconstructed image serves as Anomaly score $\mathcal{A}$. Lower $\mathcal{A}$ means the simulation is closer to SDSS observations.
-
-Here as an example we treat SDSS galaxy RGB ($i$ - $r$ - $g$ band) images as normal set, and detect anomalies in NIHAO simulated galaxies (mock observed in SDSS $i$ - $r$ - $g$ band). This model can be used on any other galaxy simulations without any re-train, can be extended to other surveys other than SDSS or other maps (velocity maps) with re-train.
-
-
-## 2. Network Architecture - GANomaly ([Samet Akcay et al.](https://arxiv.org/abs/1805.06725))
-![](plots/ganomaly.png)
-
-## 3. Gallery  (original galaxy | reconstructed galaxy | residual)
-### 3.1. SDSS test set
-![](plots/SDSSlow1.png)![](plots/SDSSlow2.png)![](plots/SDSSlow3.png)
-![](plots/SDSSmid1.png)![](plots/SDSSmid2.png)![](plots/SDSSmid3.png)
-![](plots/SDSShigh1.png)![](plots/SDSShigh2.png)![](plots/SDSShigh3.png)
-### 3.2. NIHAO simulated galaxies
-![](plots/NoAGNlow.png)![](plots/NoAGNmid.png)![](plots/NoAGNhigh.png)
-![](plots/AGNlow.png)![](plots/AGNmid.png)![](plots/AGNhigh.png)
-### 3.3. Sanity Check
-![](plots/apple.png)![](plots/SDSSabnormal1.png)![](plots/SDSSabnormal2.png)
-
-## 4. Anomaly Score Statistics
-### 4.1. General
-![](plots/SDSSnihao.png)
-![](plots/grandscore.png)
-### 4.2. NIHAO AGN vs NIHAO NoAGN
-![](plots/stellarmass.png)
-![](plots/NIHAONoAGNAGN.png)
-### 4.3. NIHAO n10 vs NIHAO n80 (Tune different star formation threshold parameter)
-![](plots/n80score.png)
-### 4.4. NIHAO UD vs NIHAO UHD (lower vs. higher simulation resolution)
-![](plots/UHDscore.png)
-### 4.5. $\mathcal{A}$ vs scaling relation properties
-![](plots/massA.png)
-![](plots/SFR100A.png)
-![](plots/SFR500A.png)
-![](plots/ZA.png)
-![](plots/ageA.png)
-![](plots/BVA.png)
-### 4.6. $\mathcal{A}$ vs scaling relations
-![](plots/nikall.png)
-
-
-# Use this project
-
 ### [Installation](#1-installation)
 ### [Use the SDSS-trained model described in the paper](#2-use-the-sdss-trained-model-described-in-the-paper)
 ### [Train your own new model with a new dataset](#3-train-your-own-new-model-with-a-new-dataset)
-### [Generate Mock observation from simulations](#4-mock-observation-from-simulations)
+### [Reproduce plots in the paper](#4-reproduce-plots-in-the-paper)
 ### [Download SDSS galaxy image dataset](#5-download-sdss-galaxy-image-dataset)
 ### [Feature/latent space exploration](#6-featurelatent-space-exploration)
 ### [Cite this work](#7-cite-this-work)
@@ -158,12 +103,8 @@ or
 - It is almost equivalent to use this repository or [the original GANomaly repository by Samet Akcay et al.](https://github.com/samet-akcay/ganomaly) to train.
 
 
-## 4. Mock observation from simulations
-
-- Install some packages: `pynbody`,`astropy`,`extinction`
-- Follow [mock_observation.py](mock_observation.py), replace the path to load your own simulation.
-- Or, follow [mock_observation.ipynb](mock_observation.ipynb) for a interactive example.
-- You shall modify the [source library](homemade_render.py) if needed.
+## 4. Reproduce plots in the paper
+Code to produce all the plots in the paper/in below is located at [paper_plot_0211.ipynb](paper_plot_0211.ipynb)
 
 
 ## 5. Download SDSS galaxy image dataset
@@ -181,6 +122,23 @@ or
 
 ## 7. Cite this work
 If you use this repository or would like to refer the paper, please use the following BibTeX entry:
+
+    @article{10.1093/mnras/stae552,
+        author = {Jin, Zehao and Macciò, Andrea V and Faucher, Nicholas and Pasquato, Mario and Buck, Tobias and Dixon, Keri L and Arora, Nikhil and Blank, Marvin and Vulanovic, Pavle},
+        title = "{Quantitatively rating galaxy simulations against real observations with anomaly detection}",
+        journal = {Monthly Notices of the Royal Astronomical Society},
+        volume = {529},
+        number = {4},
+        pages = {3536-3549},
+        year = {2024},
+        month = {02},
+        abstract = "{Cosmological galaxy formation simulations are powerful tools to understand the complex processes that govern the formation and evolution of galaxies. However, evaluating the realism of these simulations remains a challenge. The two common approaches for evaluating galaxy simulations is either through scaling relations based on a few key physical galaxy properties, or through a set of pre-defined morphological parameters based on galaxy images. This paper proposes a novel image-based method for evaluating the quality of galaxy simulations using unsupervised deep learning anomaly detection techniques. By comparing full galaxy images, our approach can identify and quantify discrepancies between simulated and observed galaxies. As a demonstration, we apply this method to SDSS imaging and NIHAO simulations with different physics models, parameters, and resolution. We further compare the metric of our method to scaling relations as well as morphological parameters. We show that anomaly detection is able to capture similarities and differences between real and simulated objects that scaling relations and morphological parameters are unable to cover, thus indeed providing a new point of view to validate and calibrate cosmological simulations against observed data.}",
+        issn = {0035-8711},
+        doi = {10.1093/mnras/stae552},
+        url = {https://doi.org/10.1093/mnras/stae552},
+        eprint = {https://academic.oup.com/mnras/article-pdf/529/4/3536/57110995/stae552.pdf},
+    }
+
 
 
 It is always nice to cite the original GANomaly paper too:
