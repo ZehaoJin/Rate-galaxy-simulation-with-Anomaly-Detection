@@ -1,6 +1,6 @@
 # Rate-galaxy-simulation-with-Anomaly-Detection
 
-### [Paper: Quantitatively rating galaxy simulations against real observations with anomaly detection](https://doi.org/10.1093/mnras/stae552)
+### [Paper: Quantitatively rating galaxy simulations against real observations with anomaly detection](https://academic.oup.com/mnras/article/529/4/3536/7612260)
 ### [Installation](#1-installation)
 ### [Use the SDSS-trained model described in the paper](#2-use-the-sdss-trained-model-described-in-the-paper)
 ### [Train your own new model with a new dataset](#3-train-your-own-new-model-with-a-new-dataset)
